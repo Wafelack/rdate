@@ -1,0 +1,75 @@
+.TH RDATE 1 "29 Frimaire An CCXXX" "Cocorico Software Corp." "Commandes Utilisateur"
+
+.SH NOM
+rdate \- date suivant le calendrier républicain
+.SH SYNOPSIS
+.B rdate
+[\fIFORMAT\fR]
+.SH DESCRIPTION
+Cet utilitaire affiche la date et l'heure sur la sortie standard. Par défaut,
+ces derniers sont affichés selon le format « %a %d %b %H:%M:%S %y ».
+.SH OPÉRANDES
+Les opérandes suivantes sont supportées afin de spécifier le format de sortie :
+.br
+	%a	Nom abrégé du jour de la semaine.
+
+	%b	Nom abrégé du mois.
+
+	%A	Nom complet du jour de la semaine.
+
+	%B	Nom complet du mois.
+
+	%c	Équivalent à « %a %d %b %H:%M:%S %Y »
+
+	%C	Siècle en tant que nombre décimal.
+
+	%d	Jour du mois en tant que nombre décimal [00 ; 30].
+
+	%D	Équivalent à « %m/%d/%y ».
+
+	%F	Équivalent à « %Y-%m-%d ».
+
+	%H	Heure en tant que nombre décimal [00 ; 23].
+
+	%j	Jour de l'année en tant que nombre décimal [001 ; 366].
+
+	%m	Mois en tant que nombre décimal [01 ; 13].
+
+	%M	Minute en tant que nombre décimal [00 ; 59].
+
+	%n	Saut de ligne.
+
+	%q	Trimestre en tant que nombre décimal [1 ; 4].
+
+	%R	L'heure au format « %H:%M ».
+
+	%S	Seconde en tant que nombre décimal [00 ; 59].
+
+	%t	Une tabulation.
+
+	%T	L'heure au format « %H:%M:%S ».
+
+	%u	Jour de la semaine en tant que nombre décimal [1 ; 7].
+
+	%w	Jour de la semaine en tant que nombre décimal [0 ; 6].
+
+	%y	L'année en tant que nombre décimal.
+
+	%Y	L'année en chiffres romains précédée de « An ».
+
+	%%	Le caractère ‘%’.
+.SH EXEMPLES
+$ rdate "%A %d %B - %H:%M"
+.br
+Nonidi 29 Frimaire - 14:45
+.SH VOIR AUSSI
+date(1p)
+.SH AUTEUR
+Écrit par Wafelack <wafelack@riseup.net>.
+.SH DROITS DE COPIE
+Copyright \(co 2021 (An 230 de la République) Wafelack
+.br
+Distribué sous licence GPLv3+ : GNU GPL version 3 ou ultérieure <https://www.gnu.org/licenses/gpl-3.0.fr.html>.
+.br
+Ceci est un logiciel libre : vous êtes libre de le modifier et de le redistribuer.
+Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE ; sans même une garantie implicite de COMMERCIABILITÉ ou DE CONFORMITÉ À UNE UTILISATION PARTICULIÈRE.

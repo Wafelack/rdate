@@ -2,6 +2,27 @@
 
 +date+ suivant le calendrier Républicain.
 
-=== License
+=== Installation
+
+==== Avec Nix
+
+[source,bash]
+----
+$ nix-env -if default.nix
+----
+
+==== Sans Nix
+
+[source,bash]
+----
+# Assurez-vous d'avoir un compilateur C et GNU Make installés.
+$ make
+$ mkdir -p /usr/local/bin/
+$ install -m 711 -t /usr/local/bin rdate
+$ mkdir -p /usr/local/share/man/man1/
+$ cp rdate.1 /usr/local/share/man/man1/
+----
+
+=== Licence
 
 Ce logiciel est publié sous la licence GNU General Public License version 3 ou ultérieure.

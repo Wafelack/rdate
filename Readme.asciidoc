@@ -1,0 +1,7 @@
+== RDate
+
++date+ suivant le calendrier Républicain.
+
+=== License
+
+Ce logiciel est publié sous la licence GNU General Public License version 3 ou ultérieure.

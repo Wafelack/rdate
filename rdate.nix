@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
     owner = "Wafelack";
     repo = "rdate";
     rev = "v${version}";
-    sha256 = "1s8l17ck1myijq5wfvng3zznbn2bjb88g18rlvl02qsadqxg53x9";
+    sha256 = "0yxmrxg15gnfndcg4kyr5bmv4g0wqzz7zf1a6pjf90x069264npm";
   };
 
   installPhase = ''

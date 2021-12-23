@@ -5,7 +5,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define DEFAULT_FORMAT ("%a %d %b %H:%M:%S %y")
+#define DEFAULT_FORMAT ("%a %d %b (%N) %H:%M:%S %y")
 #define PROGRAM_NAME ("rdate")
 
 int

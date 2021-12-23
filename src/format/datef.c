@@ -1,5 +1,6 @@
-#include <date/date.h>
-#include <format/format.h>
+#include <date.h>
+#include <format.h>
+#include <jour.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -24,6 +25,10 @@ datef (date, fmt, buf)
 
           switch (c)
             {
+            case 'N':
+              strcpy (buf, nom_unique_jour (date));
+              buf += strlen (buf);
+              break;
             case 'a':
             case 'b':
               {

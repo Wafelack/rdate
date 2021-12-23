@@ -1,4 +1,4 @@
-#include <date/date.h>
+#include <date.h>
 
 void
 heure_suivante (self)

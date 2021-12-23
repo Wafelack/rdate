@@ -1,4 +1,4 @@
-#include <date/date.h>
+#include <date.h>
 
 struct date
 date_par_defaut (void)

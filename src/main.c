@@ -1,5 +1,5 @@
-#include <date/date.h>
-#include <format/format.h>
+#include <date.h>
+#include <format.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <time.h>

@@ -1,13 +1,27 @@
-.TH RDATE 1 "29 Frimaire An CCXXX" "Cocorico Software Corp." "Commandes Utilisateur"
+.TH RDATE 1 "4 Pluviôse an CCXXX" "Wafelack" "Commandes Utilisateur"
 
 .SH NOM
 rdate \- date suivant le calendrier républicain
 .SH SYNOPSIS
-.B rdate
+.B rdate 
+[-g \fIDATEG\fR]
+[-f \fIFORMATG\fR]
 [\fIFORMAT\fR]
+.SH OPTIONS
+  -g \fIDATEG\fR        La date du calendrier grégorien à traduire en fonction de \fIFORMATG\fR.
+
+  -f \fIFORMATG\fR      Le format de traduction pour \fIDATEG\fR.
+.br
+                  Valeur par défaut : « %a %b %d %I:%M:%S %p %Z %Y ».
+.br
+                  Voir strptime(3p) pour la liste des directives de format acceptées.
 .SH DESCRIPTION
-Cet utilitaire affiche la date et l'heure sur la sortie standard. Par défaut,
-ces dernières sont affichées selon le format « %a %d %b (%N) %H:%M:%S %y ».
+Cet utilitaire affiche la date et l'heure sur la sortie standard, sauf si l'argument \fB-g\fR est fourni.
+.br
+Si cet argument est fourni, \fBrdate\fR va seulement traduire la date donnée.
+.br
+Par défaut, la date et l'heure sont affichées selon le format « %a %d %b (%N) %H:%M:%S %y ».
+
 .SH OPÉRANDES
 Les opérandes suivantes sont supportées afin de spécifier le format de sortie :
 .br
@@ -69,9 +83,10 @@ date(1p)
 .SH AUTEUR
 Écrit par Wafelack <wafelack@riseup.net>.
 .SH DROITS DE COPIE
-Copyright \(co 2021 (An 230 de la République) Wafelack
+Copyright \(co 2021-2022 (An 230 de la République) Wafelack
 .br
 Distribué sous licence GPLv3+ : GNU GPL version 3 ou ultérieure <https://www.gnu.org/licenses/gpl-3.0.fr.html>.
 .br
 Ceci est un logiciel libre : vous êtes libre de le modifier et de le redistribuer.
-Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE ; sans même une garantie implicite de COMMERCIABILITÉ ou DE CONFORMITÉ À UNE UTILISATION PARTICULIÈRE.
+Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE ;
+sans même une garantie implicite de COMMERCIABILITÉ ou DE CONFORMITÉ À UNE UTILISATION PARTICULIÈRE.

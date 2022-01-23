@@ -16,7 +16,7 @@ depuis_secondes (s)
       s = d;
       d = proceder_an (&date, s);
     }
-
+  
   s = d;
   d = proceder_mois (&date, s);
   while (d != s)

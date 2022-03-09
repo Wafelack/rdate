@@ -2,12 +2,12 @@
 
 stdenv.mkDerivation rec {
   pname = "rdate";
-  version = "0.3.0";
+  version = "0.4.0";
   src = fetchFromGitHub {
     owner = "Wafelack";
     repo = "rdate";
     rev = "v${version}";
-    sha256 = "1rkq42kry654i2xa676x4cr442bxp8dgxgpa25jagrf19sagsgq3";
+    sha256 = "0xlds1cjw4cg5vh8mwdr2qd7dslllc11lvvb02awjnmbwn6hbyh9";
   };
 
   CFLAGS = "-O3";

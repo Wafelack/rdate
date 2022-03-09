@@ -5,9 +5,9 @@
 # include <stdint.h>
 
 # define MOIS (13)
-# define SPJ (SPH * 24)
-# define SPH (SPM * 60)
-# define SPM (60)
+# define SPJ (10 * SPH)
+# define SPH (100 * SPM)
+# define SPM (100)
 
 enum mois 
 {
